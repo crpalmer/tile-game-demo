@@ -1,7 +1,8 @@
 extends PlayerBase
 class_name Player
 
+signal player_died
+
 func died():
 	.died()
-	GameEngine.clear_game()
-	GameEngine.enter_scene("res://MainMenu.tscn", "")
+	emit_signal("player_died")

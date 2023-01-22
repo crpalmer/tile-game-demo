@@ -1,9 +1,13 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://GameMain.gd" type="Script" id=1]
 [ext_resource path="res://GameEngine/Main.tscn" type="PackedScene" id=2]
+[ext_resource path="res://MainMenu.tscn" type="PackedScene" id=3]
 
 [node name="GameMain" instance=ExtResource( 2 )]
 script = ExtResource( 1 )
-debug_scene = "res://Dungeon/Dungeon.tscn"
-debug_entry_point = "entrance"
+debug_scene = ""
+debug_entry_point = ""
+
+[node name="MainMenu" parent="." index="1" instance=ExtResource( 3 )]
+visible = false
