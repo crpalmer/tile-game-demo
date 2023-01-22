@@ -5,3 +5,5 @@
 
 [node name="GameMain" instance=ExtResource( 2 )]
 script = ExtResource( 1 )
+debug_scene = "res://Dungeon/Dungeon.tscn"
+debug_entry_point = "entrance"

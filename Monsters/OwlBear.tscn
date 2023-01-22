@@ -16,6 +16,7 @@ damage_dice = {
 }
 speed = 40
 xp_value = 700
+close_radius = 10
 hp_dice = {
 "d": 10,
 "n": 7,
