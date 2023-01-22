@@ -34,6 +34,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://GameEngine/Objects/InventoryThing.gd"
 }, {
+"base": "Node2D",
+"class": "Main",
+"language": "GDScript",
+"path": "res://GameEngine/Main.gd"
+}, {
 "base": "CanvasLayer",
 "class": "Messages",
 "language": "GDScript",
@@ -44,8 +49,13 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://GameEngine/Actors/Monster.gd"
 }, {
-"base": "Actor",
+"base": "PlayerBase",
 "class": "Player",
+"language": "GDScript",
+"path": "res://Player.gd"
+}, {
+"base": "Actor",
+"class": "PlayerBase",
 "language": "GDScript",
 "path": "res://GameEngine/Actors/PlayerBase.gd"
 }, {
@@ -65,9 +75,11 @@ _global_script_class_icons={
 "Door": "",
 "HUD": "",
 "InventoryThing": "",
+"Main": "",
 "Messages": "",
 "Monster": "",
 "Player": "",
+"PlayerBase": "",
 "Thing": "",
 "TrackingArea": ""
 }
@@ -75,7 +87,7 @@ _global_script_class_icons={
 [application]
 
 config/name="tile-game"
-run/main_scene="res://Main.tscn"
+run/main_scene="res://GameMain.tscn"
 config/icon="res://icon.png"
 
 [autoload]
