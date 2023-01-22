@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/doors.png-cfabf047b0005f9e50c219d995aa004b.stex"
+path="res://.import/owlbear.png-4878e7c74350a52a0f4707209237c79c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://doors.png"
-dest_files=[ "res://.import/doors.png-cfabf047b0005f9e50c219d995aa004b.stex" ]
+source_file="res://Images/owlbear.png"
+dest_files=[ "res://.import/owlbear.png-4878e7c74350a52a0f4707209237c79c.stex" ]
 
 [params]
 
