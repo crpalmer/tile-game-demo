@@ -1,4 +1,4 @@
-extends Main
+extends Node2D
 
 export var debug_scene:String
 export var debug_entry_point:String

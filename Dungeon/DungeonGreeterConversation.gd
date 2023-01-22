@@ -2,11 +2,9 @@ extends Conversation
 
 var player_name
 
-func name(): return "Bob"
-
 func hello():
 	if player_name: return "Hi " + player_name
-	else: return "Hi my name is Bob.  Who are you?"
+	else: return "Hi my name is " + name() + ".  Who are you?"
 
 func player_said(said:String, words:Array):
 	if not player_name:

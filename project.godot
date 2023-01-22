@@ -14,6 +14,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://GameEngine/Actors/Actor.gd"
 }, {
+"base": "Resource",
+"class": "ActorStats",
+"language": "GDScript",
+"path": "res://GameEngine/Actors/ActorStats.gd"
+}, {
 "base": "Node2D",
 "class": "Conversation",
 "language": "GDScript",
@@ -38,11 +43,6 @@ _global_script_classes=[ {
 "class": "InventoryThing",
 "language": "GDScript",
 "path": "res://GameEngine/Objects/InventoryThing.gd"
-}, {
-"base": "Node2D",
-"class": "Main",
-"language": "GDScript",
-"path": "res://GameEngine/Main.gd"
 }, {
 "base": "CanvasLayer",
 "class": "Messages",
@@ -76,12 +76,12 @@ _global_script_classes=[ {
 } ]
 _global_script_class_icons={
 "Actor": "",
+"ActorStats": "",
 "Conversation": "",
 "Door": "",
 "EntryPoint": "",
 "HUD": "",
 "InventoryThing": "",
-"Main": "",
 "Messages": "",
 "Monster": "",
 "Player": "",

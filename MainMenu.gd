@@ -2,8 +2,10 @@ extends CanvasLayer
 
 var may_exit_menu = false
 
+func modulate(on): get_node("/root/GameMain/CanvasModulate").visible = on
+
 func _ready():
-	GameEngine.modulate.visible = false
+	modulate(false)	
 	$SaveGame.visible = false
 	$Died.visible = false
 
@@ -20,7 +22,7 @@ func player_died():
 	$Died.visible = true
 
 func _on_NewGame_pressed():
-	GameEngine.modulate.visible = true
+	modulate(true)
 	set_visibility(false)
 	$Died.visible = false
 	may_exit_menu = true
