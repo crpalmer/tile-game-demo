@@ -135,7 +135,7 @@ mood = 0
 position = Vector2( 215, 25 )
 
 [node name="entrance" type="Node2D" parent="."]
-position = Vector2( -224, 442 )
+position = Vector2( -56, 18 )
 script = ExtResource( 6 )
 ambient_light_percent = 10
 

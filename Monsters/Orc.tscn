@@ -13,6 +13,7 @@ damage_dice = {
 "n": 1,
 "plus": 3
 }
+speed = 30
 xp_value = 100
 hp_dice = {
 "d": 8,
