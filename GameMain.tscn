@@ -6,8 +6,6 @@
 
 [node name="GameMain" instance=ExtResource( 2 )]
 script = ExtResource( 1 )
-debug_scene = ""
-debug_entry_point = ""
 
 [node name="MainMenu" parent="." index="1" instance=ExtResource( 3 )]
 visible = false

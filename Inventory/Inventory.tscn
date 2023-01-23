@@ -1,0 +1,116 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://GameEngine/Inventory/Inventory.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Images/body.png" type="Texture" id=2]
+[ext_resource path="res://Inventory/InventoryHolder.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Inventory/Backpack.tscn" type="PackedScene" id=4]
+
+[node name="Inventory" instance=ExtResource( 1 )]
+
+[node name="InventoryContainer" parent="." index="0" instance=ExtResource( 4 )]
+position = Vector2( 440, 144 )
+scale = Vector2( 2, 1.25 )
+
+[node name="IH1" parent="InventoryContainer" index="1" instance=ExtResource( 3 )]
+position = Vector2( 96, 102.4 )
+scale = Vector2( 0.5, 0.8 )
+
+[node name="IH2" parent="InventoryContainer" index="2" instance=ExtResource( 3 )]
+position = Vector2( 144, 102.4 )
+scale = Vector2( 0.5, 0.8 )
+
+[node name="IH3" parent="InventoryContainer" index="3" instance=ExtResource( 3 )]
+position = Vector2( 192, 102.4 )
+scale = Vector2( 0.5, 0.8 )
+
+[node name="IH4" parent="InventoryContainer" index="4" instance=ExtResource( 3 )]
+position = Vector2( 240, 102.4 )
+scale = Vector2( 0.5, 0.8 )
+
+[node name="IH5" parent="InventoryContainer" index="5" instance=ExtResource( 3 )]
+position = Vector2( 288, 102.4 )
+scale = Vector2( 0.5, 0.8 )
+
+[node name="IH6" parent="InventoryContainer" index="6" instance=ExtResource( 3 )]
+position = Vector2( 96, 179.2 )
+scale = Vector2( 0.5, 0.8 )
+
+[node name="IH7" parent="InventoryContainer" index="7" instance=ExtResource( 3 )]
+position = Vector2( 144, 179.2 )
+scale = Vector2( 0.5, 0.8 )
+
+[node name="IH8" parent="InventoryContainer" index="8" instance=ExtResource( 3 )]
+position = Vector2( 192, 179.2 )
+scale = Vector2( 0.5, 0.8 )
+
+[node name="IH9" parent="InventoryContainer" index="9" instance=ExtResource( 3 )]
+position = Vector2( 240, 179.2 )
+scale = Vector2( 0.5, 0.8 )
+
+[node name="IH10" parent="InventoryContainer" index="10" instance=ExtResource( 3 )]
+position = Vector2( 288, 179.2 )
+scale = Vector2( 0.5, 0.8 )
+
+[node name="IH11" parent="InventoryContainer" index="11" instance=ExtResource( 3 )]
+position = Vector2( 96, 256 )
+scale = Vector2( 0.5, 0.8 )
+
+[node name="IH12" parent="InventoryContainer" index="12" instance=ExtResource( 3 )]
+position = Vector2( 144, 256 )
+scale = Vector2( 0.5, 0.8 )
+
+[node name="IH13" parent="InventoryContainer" index="13" instance=ExtResource( 3 )]
+position = Vector2( 192, 256 )
+scale = Vector2( 0.5, 0.8 )
+
+[node name="IH14" parent="InventoryContainer" index="14" instance=ExtResource( 3 )]
+position = Vector2( 240, 256 )
+scale = Vector2( 0.5, 0.8 )
+
+[node name="IH15" parent="InventoryContainer" index="15" instance=ExtResource( 3 )]
+position = Vector2( 288, 256 )
+scale = Vector2( 0.5, 0.8 )
+
+[node name="IH16" parent="InventoryContainer" index="16" instance=ExtResource( 3 )]
+position = Vector2( 96, 332.8 )
+scale = Vector2( 0.5, 0.8 )
+
+[node name="IH17" parent="InventoryContainer" index="17" instance=ExtResource( 3 )]
+position = Vector2( 144, 332.8 )
+scale = Vector2( 0.5, 0.8 )
+
+[node name="IH18" parent="InventoryContainer" index="18" instance=ExtResource( 3 )]
+position = Vector2( 192, 332.8 )
+scale = Vector2( 0.5, 0.8 )
+
+[node name="IH19" parent="InventoryContainer" index="19" instance=ExtResource( 3 )]
+position = Vector2( 240, 332.8 )
+scale = Vector2( 0.5, 0.8 )
+
+[node name="IH20" parent="InventoryContainer" index="20" instance=ExtResource( 3 )]
+position = Vector2( 288, 332.8 )
+scale = Vector2( 0.5, 0.8 )
+
+[node name="Sprite" type="Sprite" parent="." index="1"]
+position = Vector2( 259, 440 )
+rotation = 0.0174533
+scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 2 )
+
+[node name="Head" parent="." index="2" instance=ExtResource( 3 )]
+position = Vector2( 227, 128 )
+
+[node name="Neck" parent="." index="3" instance=ExtResource( 3 )]
+position = Vector2( 227, 232 )
+
+[node name="Body" parent="." index="4" instance=ExtResource( 3 )]
+position = Vector2( 227, 352 )
+
+[node name="Feet" parent="." index="5" instance=ExtResource( 3 )]
+position = Vector2( 227, 624 )
+
+[node name="RightHand" parent="." index="6" instance=ExtResource( 3 )]
+position = Vector2( 80, 464 )
+
+[node name="LeftHand" parent="." index="7" instance=ExtResource( 3 )]
+position = Vector2( 379, 464 )

@@ -14,8 +14,9 @@ func _process(_delta):
 		set_visibility(not visible)
 
 func set_visibility(on):
-		visible = on
-		GameEngine.paused = on
+	visible = on
+	if on: GameEngine.pause()
+	else: GameEngine.resume()
 
 func player_died():
 	set_visibility(true)
