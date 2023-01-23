@@ -5,7 +5,6 @@
 [ext_resource path="res://Images/doors.png" type="Texture" id=4]
 [ext_resource path="res://RedbrandHideout/DoorInHideout.tscn" type="PackedScene" id=5]
 [ext_resource path="res://RedbrandHideout/SecretDoor.tscn" type="PackedScene" id=6]
-[ext_resource path="res://RedbrandHideout/images/SecretDoor.gd" type="Script" id=7]
 [ext_resource path="res://GameEngine/EntryPoint.gd" type="Script" id=8]
 [ext_resource path="res://RedbrandHideout/MasterKey.tscn" type="PackedScene" id=9]
 
@@ -283,6 +282,10 @@ polygon = PoolVector2Array( -512, -849, -512, -877 )
 closed = false
 polygon = PoolVector2Array( -8, -77.1429, -8, 71.4286 )
 
+[sub_resource type="OccluderPolygon2D" id=126]
+closed = false
+polygon = PoolVector2Array( -8, -51, -8, 49 )
+
 [sub_resource type="OccluderPolygon2D" id=122]
 closed = false
 polygon = PoolVector2Array( -8.00012, 56.9999, -7.99982, -63.0001, 10.0002, -63 )
@@ -344,7 +347,9 @@ scale = Vector2( 1, 1.35 )
 
 [node name="Secret1" parent="Doors" instance=ExtResource( 6 )]
 position = Vector2( -200, 143 )
-script = ExtResource( 7 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Doors/Secret1"]
+occluder = SubResource( 126 )
 
 [node name="Secret7" parent="Doors" instance=ExtResource( 6 )]
 position = Vector2( -520, -833 )
