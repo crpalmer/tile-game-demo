@@ -2,12 +2,15 @@ extends CanvasLayer
 
 var may_exit_menu = false
 
-func modulate(on): get_node("/root/GameMain/CanvasModulate").visible = on
+func playing_game(on):
+	get_node("/root/GameMain/CanvasModulate").visible = on
+	get_node("/root/GameMain/HUD").visible = on
 
 func _ready():
-	modulate(false)	
+	playing_game(false)
 	$SaveGame.visible = false
 	$Died.visible = false
+	GameEngine.fade_anim = get_node("/root/GameMain/Fade/AnimationPlayer")
 
 func _process(_delta):
 	if may_exit_menu and Input.is_action_just_released("menu"):
@@ -23,7 +26,7 @@ func player_died():
 	$Died.visible = true
 
 func _on_NewGame_pressed():
-	modulate(true)
+	playing_game(true)
 	set_visibility(false)
 	$Died.visible = false
 	may_exit_menu = true
