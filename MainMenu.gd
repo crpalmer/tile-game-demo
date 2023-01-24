@@ -30,7 +30,8 @@ func _on_NewGame_pressed():
 	set_visibility(false)
 	$Died.visible = false
 	may_exit_menu = true
-	GameEngine.new_game("res://Dungeon/Dungeon.tscn", "entrance")
+	#GameEngine.new_game("res://Dungeon/Dungeon.tscn", "entrance")
+	GameEngine.new_game("res://RedbrandHideout/RedbrandHideout.tscn", "debug")
 	GameEngine.player.connect("player_died", self, "player_died")
 
 func _on_LoadGame_pressed():
