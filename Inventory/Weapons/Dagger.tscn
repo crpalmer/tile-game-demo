@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Inventory/Weapons/dagger.png" type="Texture" id=1]
+[ext_resource path="res://GameEngine/Inventory/InventoryThing.tscn" type="PackedScene" id=2]
+
+[node name="Dagger" instance=ExtResource( 2 )]
+time_between_uses = 1
+plural = "daggers"
+singular = "a dagger"
+weight = 1
+to_hit_modifier = 2
+can_attack_with = true
+can_be_in_hands = true
+
+[node name="Sprite" type="Sprite" parent="." index="1"]
+scale = Vector2( 0.075, 0.075 )
+texture = ExtResource( 1 )
