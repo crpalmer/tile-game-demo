@@ -13,8 +13,9 @@ func _ready():
 	GameEngine.fade_anim = get_node("/root/GameMain/Fade/AnimationPlayer")
 
 func _process(_delta):
-	if may_exit_menu and Input.is_action_just_released("menu"):
-		set_visibility(not visible)
+	if Input.is_action_just_released("menu"):
+		if visible and may_exit_menu: set_visibility(false)
+		elif not GameEngine.is_paused(): set_visibility(true)
 
 func set_visibility(on):
 	visible = on
@@ -23,6 +24,7 @@ func set_visibility(on):
 
 func player_died():
 	set_visibility(true)
+	may_exit_menu = false
 	$Died.visible = true
 
 func _on_NewGame_pressed():
@@ -30,8 +32,8 @@ func _on_NewGame_pressed():
 	set_visibility(false)
 	$Died.visible = false
 	may_exit_menu = true
-	#GameEngine.new_game("res://Dungeon/Dungeon.tscn", "entrance")
-	GameEngine.new_game("res://RedbrandHideout/RedbrandHideout.tscn", "debug")
+	GameEngine.new_game("res://Dungeon/Dungeon.tscn", "entrance")
+	#GameEngine.new_game("res://RedbrandHideout/RedbrandHideout.tscn", "debug")
 	GameEngine.player.connect("player_died", self, "player_died")
 
 func _on_LoadGame_pressed():
