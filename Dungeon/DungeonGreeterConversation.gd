@@ -2,6 +2,15 @@ extends Conversation
 
 var player_name
 
+func get_persistent_data():
+	var p = .get_persistent_data()
+	p.merge({ "player_name": player_name})
+	return p
+
+func load_persistent_data(p):
+	.load_persistent_data(p)
+	player_name = p.player_name
+	
 func hello():
 	if player_name: return "Hi " + player_name
 	else: return "Hi my name is " + name() + ".  Who are you?"

@@ -124,7 +124,6 @@ custom_fonts/normal_font = SubResource( 5 )
 text = "sample message text
 game messages will appear here
 dafjaklfjakl"
-scroll_following = true
 max_messages = 100
 new_message_color = Color( 0.701961, 0.137255, 0.137255, 1 )
 stale_message_color = Color( 0.972549, 0.960784, 0.960784, 1 )
