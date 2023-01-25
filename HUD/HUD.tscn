@@ -14,6 +14,7 @@ size = 18
 font_data = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=5]
+size = 18
 font_data = ExtResource( 4 )
 
 [node name="HUD" type="CanvasLayer"]
@@ -115,11 +116,15 @@ scale = Vector2( 1, 0.3 )
 texture = ExtResource( 3 )
 
 [node name="Messages" parent="MessageArea" instance=ExtResource( 2 )]
-margin_left = 145.0
+margin_left = 142.0
 margin_top = 5.0
-margin_right = 1136.0
+margin_right = 1141.0
 margin_bottom = 73.0
-custom_fonts/font = SubResource( 5 )
+custom_fonts/normal_font = SubResource( 5 )
 text = "sample message text
 game messages will appear here
 dafjaklfjakl"
+scroll_following = true
+max_messages = 100
+new_message_color = Color( 0.701961, 0.137255, 0.137255, 1 )
+stale_message_color = Color( 0.972549, 0.960784, 0.960784, 1 )
