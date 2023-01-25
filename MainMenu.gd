@@ -14,7 +14,6 @@ func _ready():
 	playing_game(false)
 	$SaveGame.visible = false
 	$Died.visible = false
-	GameEngine.fade_anim = get_node("/root/GameMain/Fade/AnimationPlayer")
 
 func _process(_delta):
 	if Input.is_action_just_released("menu"):
