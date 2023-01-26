@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://GameEngine/Inventory/Inventory.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Images/body.png" type="Texture" id=2]
@@ -7,20 +7,30 @@
 [ext_resource path="res://GameEngine/Inventory/InventoryContainer.tscn" type="PackedScene" id=5]
 [ext_resource path="res://GameEngine/Inventory/InventoryDrop.tscn" type="PackedScene" id=6]
 [ext_resource path="res://HUD/Pong Font.ttf" type="DynamicFontData" id=7]
+[ext_resource path="res://GameEngine/Inventory/CurrencyLabel.tscn" type="PackedScene" id=8]
 
 [sub_resource type="DynamicFont" id=1]
 size = 32
+font_data = ExtResource( 7 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 48
+font_data = ExtResource( 7 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 36
 font_data = ExtResource( 7 )
 
 [node name="Inventory" instance=ExtResource( 1 )]
 layer = 2
 
 [node name="Backpack" parent="." index="0" instance=ExtResource( 5 )]
+position = Vector2( -64, 8 )
 
 [node name="BackpackSprite" type="Sprite" parent="Backpack" index="0"]
-position = Vector2( 832, 424 )
+position = Vector2( 842.595, 424.185 )
 rotation = 0.0174533
-scale = Vector2( 2, 1.5 )
+scale = Vector2( 1.75604, 1.5 )
 texture = ExtResource( 4 )
 
 [node name="IH1" parent="Backpack" index="1" instance=ExtResource( 3 )]
@@ -201,10 +211,10 @@ is_equipped = true
 requires_feet = true
 
 [node name="InventoryDrop" parent="." index="2" instance=ExtResource( 6 )]
-margin_left = 376.0
-margin_top = 200.0
-margin_right = 504.0
-margin_bottom = 328.0
+margin_left = 360.0
+margin_top = 144.0
+margin_right = 488.0
+margin_bottom = 272.0
 
 [node name="Label" type="Label" parent="InventoryDrop" index="0"]
 margin_left = 24.0
@@ -213,3 +223,60 @@ margin_right = 93.0
 margin_bottom = 78.0
 custom_fonts/font = SubResource( 1 )
 text = "Drop"
+
+[node name="Money" type="Node2D" parent="." index="3"]
+position = Vector2( -64, 8 )
+
+[node name="GoldLabel" type="Label" parent="Money" index="0"]
+margin_left = 1184.0
+margin_top = 288.0
+margin_right = 1284.0
+margin_bottom = 345.0
+custom_fonts/font = SubResource( 2 )
+text = "Gold:"
+
+[node name="Gold" parent="Money" index="1" instance=ExtResource( 8 )]
+margin_left = 1176.0
+margin_top = 336.0
+margin_right = 1302.0
+margin_bottom = 379.0
+custom_fonts/font = SubResource( 3 )
+align = 1
+valign = 1
+currency = "res://Inventory/Currency/GoldPiece.tscn"
+
+[node name="SilverLabel" type="Label" parent="Money" index="2"]
+margin_left = 1176.0
+margin_top = 440.0
+margin_right = 1314.0
+margin_bottom = 497.0
+custom_fonts/font = SubResource( 2 )
+text = "Silver:"
+
+[node name="Silver" parent="Money" index="3" instance=ExtResource( 8 )]
+margin_left = 1176.0
+margin_top = 488.0
+margin_right = 1302.0
+margin_bottom = 531.0
+custom_fonts/font = SubResource( 3 )
+align = 1
+valign = 1
+currency = "res://Inventory/Currency/SilverPiece.tscn"
+
+[node name="CopperLabel" type="Label" parent="Money" index="4"]
+margin_left = 1168.0
+margin_top = 568.0
+margin_right = 1338.0
+margin_bottom = 625.0
+custom_fonts/font = SubResource( 2 )
+text = "Copper:"
+
+[node name="Copper" parent="Money" index="5" instance=ExtResource( 8 )]
+margin_left = 1184.0
+margin_top = 624.0
+margin_right = 1310.0
+margin_bottom = 667.0
+custom_fonts/font = SubResource( 3 )
+align = 1
+valign = 1
+currency = "res://Inventory/Currency/CopperPiece.tscn"

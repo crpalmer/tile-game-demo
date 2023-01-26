@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Inventory/Currency/silver-piece.png" type="Texture" id=1]
+[ext_resource path="res://GameEngine/Inventory/Currency.tscn" type="PackedScene" id=2]
+
+[node name="SilverPiece" instance=ExtResource( 2 )]
+display_name = "silver piece"
+plural = "silver pieces"
+unit_value = 10
+
+[node name="Sprite" type="Sprite" parent="." index="1"]
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 1 )

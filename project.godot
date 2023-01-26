@@ -25,6 +25,11 @@ _global_script_classes=[ {
 "path": "res://GameEngine/Conversation/Conversation.gd"
 }, {
 "base": "Thing",
+"class": "Currency",
+"language": "GDScript",
+"path": "res://GameEngine/Inventory/Currency.gd"
+}, {
+"base": "Thing",
 "class": "Door",
 "language": "GDScript",
 "path": "res://GameEngine/Objects/Door.gd"
@@ -78,6 +83,7 @@ _global_script_class_icons={
 "Actor": "",
 "Attack": "",
 "Conversation": "",
+"Currency": "",
 "Door": "",
 "EntryPoint": "",
 "InventoryHolder": "",

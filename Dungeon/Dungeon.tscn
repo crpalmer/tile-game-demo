@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://GameEngine/Objects/Portal.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Inventory/Weapons/Dagger.tscn" type="PackedScene" id=2]
@@ -12,6 +12,9 @@
 [ext_resource path="res://Inventory/Weapons/LongSword.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Inventory/Armor/Chainmail.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Inventory/RingOfProtection.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Inventory/Currency/GoldPiece.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Inventory/Currency/SilverPiece.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Inventory/Currency/CopperPiece.tscn" type="PackedScene" id=15]
 
 [sub_resource type="OccluderPolygon2D" id=81]
 polygon = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
@@ -138,22 +141,20 @@ collision_layer = 1
 [node name="Orc" parent="." instance=ExtResource( 4 )]
 position = Vector2( 217, 35 )
 collision_layer = 1
-gp_dice = {
-"d": 12,
-"n": 1,
-"plus": 4
-}
 
 [node name="entrance" type="Node2D" parent="."]
-position = Vector2( -56, 18 )
+position = Vector2( -80, -31 )
 script = ExtResource( 6 )
 ambient_light_percent = 10
 
-[node name="LongSword" parent="." instance=ExtResource( 10 )]
-position = Vector2( -81, 72 )
-
 [node name="Chainmail" parent="." instance=ExtResource( 11 )]
-position = Vector2( 20, -8 )
+position = Vector2( -67, -23 )
+
+[node name="LongSword" parent="." instance=ExtResource( 10 )]
+position = Vector2( -62, -23 )
+
+[node name="Dagger" parent="." instance=ExtResource( 2 )]
+position = Vector2( -68, -18 )
 
 [node name="exit_to_redbrand" parent="." instance=ExtResource( 1 )]
 position = Vector2( 80, -28 )
@@ -168,9 +169,6 @@ scale = Vector2( 0.796875, 0.796875 )
 texture = SubResource( 89 )
 normal_map = SubResource( 91 )
 
-[node name="Dagger" parent="." instance=ExtResource( 2 )]
-position = Vector2( 7, 87 )
-
 [node name="Plus2RingOfProtection" parent="." instance=ExtResource( 12 )]
 position = Vector2( -224, -18 )
 ac_modifier = 2
@@ -179,3 +177,19 @@ ac_modifier = 2
 monsters = [ "res://Monsters/Orc.tscn" ]
 check_every_hours = 4.0
 test_roll = 19
+
+[node name="GoldPiece" parent="." instance=ExtResource( 13 )]
+random_min = 1
+random_max = 5
+
+[node name="SilverPiece" parent="." instance=ExtResource( 14 )]
+position = Vector2( 39, 76 )
+n_units = 2
+
+[node name="CopperPiece" parent="." instance=ExtResource( 15 )]
+position = Vector2( -18, 85 )
+n_units = 1
+
+[node name="GoldPiece2" parent="." instance=ExtResource( 13 )]
+position = Vector2( -74, 80 )
+n_units = 3
