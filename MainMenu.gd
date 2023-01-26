@@ -33,7 +33,7 @@ func player_died():
 
 func _on_NewGame_pressed():
 	playing_game(true)
-	GameEngine.new_game("res://Dungeon/Dungeon.tscn", "entrance")
+	GameEngine.new_game("res://Dungeon/Dungeon.tscn", "entrance", 8*60)
 	#GameEngine.new_game("res://RedbrandHideout/RedbrandHideout.tscn", "debug")
 	GameEngine.player.connect("player_died", self, "player_died")
 
