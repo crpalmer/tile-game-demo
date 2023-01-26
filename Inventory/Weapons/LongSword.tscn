@@ -4,9 +4,8 @@
 [ext_resource path="res://GameEngine/Inventory/InventoryThing.tscn" type="PackedScene" id=2]
 
 [node name="LongSword" instance=ExtResource( 2 )]
-time_between_uses = 1
+display_name = "long sword"
 plural = "long swords"
-singular = "long sword"
 weight = 3
 damage_dice = {
 "d": 8,

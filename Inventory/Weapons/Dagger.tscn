@@ -4,9 +4,8 @@
 [ext_resource path="res://GameEngine/Inventory/InventoryThing.tscn" type="PackedScene" id=2]
 
 [node name="Dagger" instance=ExtResource( 2 )]
-time_between_uses = 1
+display_name = "dagger"
 plural = "daggers"
-singular = "a dagger"
 weight = 1
 to_hit_modifier = 2
 can_attack_with = true
