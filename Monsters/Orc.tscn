@@ -26,6 +26,7 @@ shape = SubResource( 1 )
 
 [node name="Attack" parent="." index="7" instance=ExtResource( 2 )]
 display_name = "Greataxe"
+combinable = null
 to_hit_modifier = 5
 damage_dice = {
 "d": 12,

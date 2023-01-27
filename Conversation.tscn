@@ -39,6 +39,7 @@ margin_right = 969.0
 margin_bottom = 176.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Blah blah blah"
+autowrap = true
 what = "text"
 
 [node name="PlayerPrompt" type="Label" parent="." index="3"]

@@ -39,6 +39,16 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://GameEngine/EntryPoint.gd"
 }, {
+"base": "Resource",
+"class": "GameConfiguration",
+"language": "GDScript",
+"path": "res://GameEngine/GameConfiguration.gd"
+}, {
+"base": "InventoryHolder",
+"class": "InventoryDrop",
+"language": "GDScript",
+"path": "res://GameEngine/Inventory/InventoryDrop.gd"
+}, {
 "base": "Control",
 "class": "InventoryHolder",
 "language": "GDScript",
@@ -86,6 +96,8 @@ _global_script_class_icons={
 "Currency": "",
 "Door": "",
 "EntryPoint": "",
+"GameConfiguration": "",
+"InventoryDrop": "",
 "InventoryHolder": "",
 "InventoryThing": "",
 "Messages": "",

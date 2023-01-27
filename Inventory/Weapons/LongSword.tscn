@@ -13,7 +13,7 @@ damage_dice = {
 "plus": 0
 }
 can_attack_with = true
-can_be_in_hands = true
+acceptable = 1
 
 [node name="Sprite" type="Sprite" parent="." index="1"]
 rotation = -1.85703

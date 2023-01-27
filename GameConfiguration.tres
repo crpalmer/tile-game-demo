@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://GameEngine/GameConfiguration.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+entry_scene = "res://Dungeon/Dungeon.tscn"
+entry_point = "entrance"
+fade_animation_path = "FadeLayer/Fade/AnimationPlayer"
+game_start_time_in_hours = 8.0
+currency = [ "res://Inventory/Currency/CopperPiece.tscn", "res://Inventory/Currency/SilverPiece.tscn", "res://Inventory/Currency/GoldPiece.tscn" ]

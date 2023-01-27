@@ -6,7 +6,6 @@
 [node name="GoldPiece" instance=ExtResource( 2 )]
 display_name = "gold piece"
 plural = "gold pieces"
-unit_value = 100
 
 [node name="Sprite" type="Sprite" parent="." index="1"]
 scale = Vector2( 0.15, 0.15 )

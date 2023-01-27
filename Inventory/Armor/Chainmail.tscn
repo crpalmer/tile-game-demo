@@ -4,9 +4,10 @@
 [ext_resource path="res://GameEngine/Inventory/InventoryThing.tscn" type="PackedScene" id=2]
 
 [node name="Chainmail" instance=ExtResource( 2 )]
+display_name = "chainmail"
 weight = 20
 ac = 13
-can_be_on_body = true
+acceptable = 4
 
 [node name="Sprite" type="Sprite" parent="." index="1"]
 scale = Vector2( 0.1, 0.1 )

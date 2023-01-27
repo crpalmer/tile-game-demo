@@ -1,10 +1,9 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=11 format=2]
 
-[ext_resource path="res://GameEngine/Inventory/Inventory.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Images/body.png" type="Texture" id=2]
 [ext_resource path="res://Inventory/InventoryHolder.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Images/backpack.png" type="Texture" id=4]
-[ext_resource path="res://GameEngine/Inventory/InventoryContainer.tscn" type="PackedScene" id=5]
+[ext_resource path="res://GameEngine/Inventory/Inventory.tscn" type="PackedScene" id=5]
 [ext_resource path="res://GameEngine/Inventory/InventoryDrop.tscn" type="PackedScene" id=6]
 [ext_resource path="res://HUD/Pong Font.ttf" type="DynamicFontData" id=7]
 [ext_resource path="res://GameEngine/Inventory/CurrencyLabel.tscn" type="PackedScene" id=8]
@@ -21,194 +20,193 @@ font_data = ExtResource( 7 )
 size = 36
 font_data = ExtResource( 7 )
 
-[node name="Inventory" instance=ExtResource( 1 )]
+[node name="Inventory" instance=ExtResource( 5 )]
 layer = 2
 
-[node name="Backpack" parent="." index="0" instance=ExtResource( 5 )]
-position = Vector2( -64, 8 )
+[node name="Backpack" type="Node2D" parent="." index="0"]
 
 [node name="BackpackSprite" type="Sprite" parent="Backpack" index="0"]
-position = Vector2( 842.595, 424.185 )
+position = Vector2( 781.53, 433.097 )
 rotation = 0.0174533
 scale = Vector2( 1.75604, 1.5 )
 texture = ExtResource( 4 )
 
 [node name="IH1" parent="Backpack" index="1" instance=ExtResource( 3 )]
-margin_left = 640.0
-margin_top = 208.0
-margin_right = 704.0
-margin_bottom = 272.0
+margin_left = 578.935
+margin_top = 216.912
+margin_right = 642.935
+margin_bottom = 280.912
 
 [node name="IH2" parent="Backpack" index="2" instance=ExtResource( 3 )]
-margin_left = 768.0
-margin_top = 208.0
-margin_right = 832.0
-margin_bottom = 272.0
+margin_left = 706.935
+margin_top = 216.912
+margin_right = 770.935
+margin_bottom = 280.912
 
 [node name="IH3" parent="Backpack" index="3" instance=ExtResource( 3 )]
-margin_left = 888.0
-margin_top = 208.0
-margin_right = 952.0
-margin_bottom = 272.0
+margin_left = 826.935
+margin_top = 216.912
+margin_right = 890.935
+margin_bottom = 280.912
 
 [node name="IH4" parent="Backpack" index="4" instance=ExtResource( 3 )]
-margin_left = 1008.0
-margin_top = 208.0
-margin_right = 1072.0
-margin_bottom = 272.0
+margin_left = 946.935
+margin_top = 216.912
+margin_right = 1010.93
+margin_bottom = 280.912
 
 [node name="IH5" parent="Backpack" index="5" instance=ExtResource( 3 )]
-margin_left = 640.0
-margin_top = 312.0
-margin_right = 704.0
-margin_bottom = 376.0
+margin_left = 578.935
+margin_top = 320.912
+margin_right = 642.935
+margin_bottom = 384.912
 
 [node name="IH6" parent="Backpack" index="6" instance=ExtResource( 3 )]
-margin_left = 768.0
-margin_top = 312.0
-margin_right = 832.0
-margin_bottom = 376.0
+margin_left = 706.935
+margin_top = 320.912
+margin_right = 770.935
+margin_bottom = 384.912
 
 [node name="IH7" parent="Backpack" index="7" instance=ExtResource( 3 )]
-margin_left = 888.0
-margin_top = 312.0
-margin_right = 952.0
-margin_bottom = 376.0
+margin_left = 826.935
+margin_top = 320.912
+margin_right = 890.935
+margin_bottom = 384.912
 
 [node name="IH8" parent="Backpack" index="8" instance=ExtResource( 3 )]
-margin_left = 1008.0
-margin_top = 312.0
-margin_right = 1072.0
-margin_bottom = 376.0
+margin_left = 946.935
+margin_top = 320.912
+margin_right = 1010.93
+margin_bottom = 384.912
 
 [node name="IH9" parent="Backpack" index="9" instance=ExtResource( 3 )]
-margin_left = 640.0
-margin_top = 416.0
-margin_right = 704.0
-margin_bottom = 480.0
+margin_left = 578.935
+margin_top = 424.912
+margin_right = 642.935
+margin_bottom = 488.912
 
 [node name="IH10" parent="Backpack" index="10" instance=ExtResource( 3 )]
-margin_left = 768.0
-margin_top = 416.0
-margin_right = 832.0
-margin_bottom = 480.0
+margin_left = 706.935
+margin_top = 424.912
+margin_right = 770.935
+margin_bottom = 488.912
 
 [node name="IH11" parent="Backpack" index="11" instance=ExtResource( 3 )]
-margin_left = 888.0
-margin_top = 416.0
-margin_right = 952.0
-margin_bottom = 480.0
+margin_left = 826.935
+margin_top = 424.912
+margin_right = 890.935
+margin_bottom = 488.912
 
 [node name="IH12" parent="Backpack" index="12" instance=ExtResource( 3 )]
-margin_left = 1008.0
-margin_top = 408.0
-margin_right = 1072.0
-margin_bottom = 472.0
+margin_left = 946.935
+margin_top = 416.912
+margin_right = 1010.93
+margin_bottom = 480.912
 
 [node name="IH13" parent="Backpack" index="13" instance=ExtResource( 3 )]
-margin_left = 640.0
-margin_top = 520.0
-margin_right = 704.0
-margin_bottom = 584.0
+margin_left = 578.935
+margin_top = 528.912
+margin_right = 642.935
+margin_bottom = 592.912
 
 [node name="IH14" parent="Backpack" index="14" instance=ExtResource( 3 )]
-margin_left = 768.0
-margin_top = 520.0
-margin_right = 832.0
-margin_bottom = 584.0
+margin_left = 706.935
+margin_top = 528.912
+margin_right = 770.935
+margin_bottom = 592.912
 
 [node name="IH15" parent="Backpack" index="15" instance=ExtResource( 3 )]
-margin_left = 888.0
-margin_top = 520.0
-margin_right = 952.0
-margin_bottom = 584.0
+margin_left = 826.935
+margin_top = 528.912
+margin_right = 890.935
+margin_bottom = 592.912
 
 [node name="IH16" parent="Backpack" index="16" instance=ExtResource( 3 )]
-margin_left = 1008.0
-margin_top = 520.0
-margin_right = 1072.0
-margin_bottom = 584.0
+margin_left = 946.935
+margin_top = 528.912
+margin_right = 1010.93
+margin_bottom = 592.912
 
 [node name="IH17" parent="Backpack" index="17" instance=ExtResource( 3 )]
-margin_left = 640.0
-margin_top = 616.0
-margin_right = 704.0
-margin_bottom = 680.0
+margin_left = 578.935
+margin_top = 624.912
+margin_right = 642.935
+margin_bottom = 688.912
 
 [node name="IH18" parent="Backpack" index="18" instance=ExtResource( 3 )]
-margin_left = 768.0
-margin_top = 624.0
-margin_right = 832.0
-margin_bottom = 688.0
+margin_left = 706.935
+margin_top = 632.912
+margin_right = 770.935
+margin_bottom = 696.912
 
 [node name="IH19" parent="Backpack" index="19" instance=ExtResource( 3 )]
-margin_left = 888.0
-margin_top = 624.0
-margin_right = 952.0
-margin_bottom = 688.0
+margin_left = 826.935
+margin_top = 632.912
+margin_right = 890.935
+margin_bottom = 696.912
 
 [node name="IH20" parent="Backpack" index="20" instance=ExtResource( 3 )]
-margin_left = 1008.0
-margin_top = 624.0
-margin_right = 1072.0
-margin_bottom = 688.0
+margin_left = 946.935
+margin_top = 632.912
+margin_right = 1010.93
+margin_bottom = 696.912
 
-[node name="BodyInventory" parent="." index="1" instance=ExtResource( 5 )]
+[node name="Body" type="Node2D" parent="." index="1"]
 
-[node name="BodySprite" type="Sprite" parent="BodyInventory" index="0"]
+[node name="BodySprite" type="Sprite" parent="Body" index="0"]
 position = Vector2( 248, 432 )
 rotation = 0.0174533
 scale = Vector2( 0.9, 0.9 )
 texture = ExtResource( 2 )
 
-[node name="LeftHand" parent="BodyInventory" index="1" instance=ExtResource( 3 )]
+[node name="LeftHand" parent="Body" index="1" instance=ExtResource( 3 )]
 margin_left = 392.0
 margin_top = 456.0
 margin_right = 456.0
 margin_bottom = 520.0
 rect_pivot_offset = Vector2( 16, 32 )
 is_equipped = true
-requires_hands = true
+requires = 1
 
-[node name="RightHand" parent="BodyInventory" index="2" instance=ExtResource( 3 )]
+[node name="RightHand" parent="Body" index="2" instance=ExtResource( 3 )]
 margin_left = 40.0
 margin_top = 456.0
 margin_right = 104.0
 margin_bottom = 520.0
 is_equipped = true
-requires_hands = true
+requires = 1
 
-[node name="Head" parent="BodyInventory" index="3" instance=ExtResource( 3 )]
+[node name="Head" parent="Body" index="3" instance=ExtResource( 3 )]
 margin_left = 216.0
 margin_top = 88.0
 margin_right = 280.0
 margin_bottom = 152.0
 is_equipped = true
-requires_head = true
+requires = 2
 
-[node name="Neck" parent="BodyInventory" index="4" instance=ExtResource( 3 )]
+[node name="Neck" parent="Body" index="4" instance=ExtResource( 3 )]
 margin_left = 216.0
 margin_top = 208.0
 margin_right = 280.0
 margin_bottom = 272.0
 is_equipped = true
-requires_neck = true
+requires = 16
 
-[node name="Body" parent="BodyInventory" index="5" instance=ExtResource( 3 )]
+[node name="Body" parent="Body" index="5" instance=ExtResource( 3 )]
 margin_left = 216.0
 margin_top = 328.0
 margin_right = 280.0
 margin_bottom = 392.0
 is_equipped = true
-requires_body = true
+requires = 4
 
-[node name="Feet" parent="BodyInventory" index="6" instance=ExtResource( 3 )]
+[node name="Feet" parent="Body" index="6" instance=ExtResource( 3 )]
 margin_left = 216.0
 margin_top = 656.0
 margin_right = 280.0
 margin_bottom = 720.0
 is_equipped = true
-requires_feet = true
+requires = 8
 
 [node name="InventoryDrop" parent="." index="2" instance=ExtResource( 6 )]
 margin_left = 360.0

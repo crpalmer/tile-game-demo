@@ -1,9 +1,9 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Images/backpack.png" type="Texture" id=1]
-[ext_resource path="res://GameEngine/Inventory/InventoryContainer.tscn" type="PackedScene" id=2]
+[ext_resource path="res://GameEngine/Inventory/Inventory.tscn" type="PackedScene" id=2]
 
-[node name="InventoryContainer" instance=ExtResource( 2 )]
+[node name="Backpack" instance=ExtResource( 2 )]
 
 [node name="Sprite" type="Sprite" parent="." index="0"]
 position = Vector2( 200, 208 )

@@ -9,7 +9,7 @@ plural = "daggers"
 weight = 1
 to_hit_modifier = 2
 can_attack_with = true
-can_be_in_hands = true
+acceptable = 1
 
 [node name="Sprite" type="Sprite" parent="." index="1"]
 scale = Vector2( 0.075, 0.075 )
