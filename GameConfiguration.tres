@@ -9,4 +9,4 @@ root = "res://GameEngine"
 entry_point = "entrance"
 fade_animation_path = "FadeLayer/Fade/AnimationPlayer"
 game_start_time_in_hours = 8.0
-currency = [ "res://Inventory/Currency/CopperPiece.tscn", "res://Inventory/Currency/SilverPiece.tscn", "res://Inventory/Currency/GoldPiece.tscn" ]
+currency = [ "res://DandD/Currency/CopperPiece.tscn", "res://DandD/Currency/SilverPiece.tscn", "res://DandD/Currency/GoldPiece.tscn" ]

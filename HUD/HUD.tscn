@@ -68,7 +68,6 @@ margin_right = 32.0
 margin_bottom = 22.0
 custom_fonts/font = SubResource( 4 )
 align = 1
-what = "hp"
 
 [node name="HPMaxRect" type="ColorRect" parent="Stats"]
 margin_left = 88.0
@@ -82,7 +81,7 @@ margin_right = 32.0
 margin_bottom = 22.0
 custom_fonts/font = SubResource( 4 )
 align = 1
-what = "hp-max"
+stat = 2
 
 [node name="ACRect" type="ColorRect" parent="Stats"]
 margin_left = 44.0
@@ -96,7 +95,7 @@ margin_right = 32.0
 margin_bottom = 22.0
 custom_fonts/font = SubResource( 4 )
 align = 1
-what = "ac"
+stat = 1
 
 [node name="XPRect" type="ColorRect" parent="Stats"]
 margin_left = 44.0
@@ -109,7 +108,7 @@ color = Color( 0.545098, 0.478431, 0.478431, 1 )
 margin_right = 64.0
 margin_bottom = 22.0
 custom_fonts/font = SubResource( 4 )
-what = "xp"
+stat = 4
 
 [node name="MessageArea" type="Node2D" parent="."]
 
