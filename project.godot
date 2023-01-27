@@ -19,6 +19,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://GameEngine/Actors/Attack.gd"
 }, {
+"base": "Node",
+"class": "Class",
+"language": "GDScript",
+"path": "res://GameEngine/Actors/Classes/Class.gd"
+}, {
 "base": "Node2D",
 "class": "Conversation",
 "language": "GDScript",
@@ -44,11 +49,6 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://GameEngine/GameConfiguration.gd"
 }, {
-"base": "InventoryHolder",
-"class": "InventoryDrop",
-"language": "GDScript",
-"path": "res://GameEngine/Inventory/InventoryDrop.gd"
-}, {
 "base": "Control",
 "class": "InventoryHolder",
 "language": "GDScript",
@@ -69,15 +69,10 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://GameEngine/Actors/Monster.gd"
 }, {
-"base": "PlayerBase",
+"base": "Actor",
 "class": "Player",
 "language": "GDScript",
-"path": "res://Player.gd"
-}, {
-"base": "Actor",
-"class": "PlayerBase",
-"language": "GDScript",
-"path": "res://GameEngine/Actors/PlayerBase.gd"
+"path": "res://GameEngine/Actors/Player.gd"
 }, {
 "base": "KinematicBody2D",
 "class": "Thing",
@@ -92,25 +87,24 @@ _global_script_classes=[ {
 _global_script_class_icons={
 "Actor": "",
 "Attack": "",
+"Class": "",
 "Conversation": "",
 "Currency": "",
 "Door": "",
 "EntryPoint": "",
 "GameConfiguration": "",
-"InventoryDrop": "",
 "InventoryHolder": "",
 "InventoryThing": "",
 "Messages": "",
 "Monster": "",
 "Player": "",
-"PlayerBase": "",
 "Thing": "",
 "TrackingArea": ""
 }
 
 [application]
 
-config/name="tile-game"
+config/name="tile-game-testing"
 run/main_scene="res://GameMain.tscn"
 config/icon="res://icon.png"
 

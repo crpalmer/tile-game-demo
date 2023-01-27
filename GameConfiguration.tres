@@ -5,6 +5,7 @@
 [resource]
 script = ExtResource( 1 )
 entry_scene = "res://Dungeon/Dungeon.tscn"
+root = "res://GameEngine"
 entry_point = "entrance"
 fade_animation_path = "FadeLayer/Fade/AnimationPlayer"
 game_start_time_in_hours = 8.0
