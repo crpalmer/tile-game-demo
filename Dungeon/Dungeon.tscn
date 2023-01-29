@@ -175,12 +175,11 @@ position = Vector2( -224, -18 )
 ac_modifier = 2
 
 [node name="RandomEncounters" parent="." instance=ExtResource( 9 )]
-monsters = [ "res://Monsters/Orc.tscn" ]
+monsters = [ "res://DandD/Monsters/Orc.tscn" ]
 check_every_hours = 4.0
 test_roll = 19
 
 [node name="GoldPiece" parent="." instance=ExtResource( 13 )]
-unit_value = 1.0
 random_min = 1
 random_max = 5
 
@@ -195,7 +194,6 @@ n_units = 1
 
 [node name="GoldPiece2" parent="." instance=ExtResource( 13 )]
 position = Vector2( -74, 80 )
-unit_value = 1.0
 n_units = 3
 
 [node name="Torch2" parent="." instance=ExtResource( 16 )]

@@ -1,6 +1,7 @@
-extends Conversation
+extends ConversationalActor
 
 var player_name
+var wants_to_talk = true
 
 func get_persistent_data():
 	var p = .get_persistent_data()
@@ -10,7 +11,17 @@ func get_persistent_data():
 func load_persistent_data(p):
 	.load_persistent_data(p)
 	player_name = p.player_name
-	
+
+func wants_to_initiate_conversation():
+	return wants_to_talk
+
+func start():
+	wants_to_talk = false
+	.start()
+
+func say_hello():
+	say(hello())
+
 func hello():
 	if player_name: return "Hi " + player_name
 	else: return "Hi my name is " + name() + ".  Who are you?"

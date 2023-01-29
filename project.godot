@@ -24,10 +24,15 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://GameEngine/Actors/Classes/Class.gd"
 }, {
-"base": "Node2D",
+"base": "CanvasLayer",
 "class": "Conversation",
 "language": "GDScript",
-"path": "res://GameEngine/Conversation/Conversation.gd"
+"path": "res://GameEngine/Conversation.gd"
+}, {
+"base": "Actor",
+"class": "ConversationalActor",
+"language": "GDScript",
+"path": "res://GameEngine/Actors/ConversationalActor.gd"
 }, {
 "base": "Thing",
 "class": "Currency",
@@ -89,6 +94,7 @@ _global_script_class_icons={
 "Attack": "",
 "Class": "",
 "Conversation": "",
+"ConversationalActor": "",
 "Currency": "",
 "Door": "",
 "EntryPoint": "",
